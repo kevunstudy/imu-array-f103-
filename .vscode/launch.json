@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug STM32F103 - ST-Link",
+      "cwd": "${workspaceFolder}",
+      "type": "cortex-debug",
+      "executable": "${command:cmake.launchTargetPath}",
+      "request": "launch",
+      "servertype": "stlink",
+      "device": "STM32F103C8",     // 按你的实际芯片型号改
+      "interface": "swd",
+      "serialNumber": "",
+      "interfaceFreq": 1000,      // 单位 kHz，1 MHz
+      "svdFile": "C:/ST/STM32CubeCLT_1.15.0/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+      "v1": false,
+      "showDevDebugOutput": "both",
+      "sourceFileMap": {
+          "/": "${workspaceFolder}/"
+      }
+    }
+  ]
+}
