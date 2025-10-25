@@ -46,6 +46,10 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${CMAKE_SOURCE_DIR}/Core/hardware/usart.c
+    ${CMAKE_SOURCE_DIR}/Core/hardware/led.c
+    ${CMAKE_SOURCE_DIR}/Core/hardware/key.c
+    ${CMAKE_SOURCE_DIR}/Core/hardware/imu_processing.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/delay.c
 )
 
 # Add include paths

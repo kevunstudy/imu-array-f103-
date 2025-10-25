@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,6 +59,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define IMU1_INT_Pin GPIO_PIN_15
+#define IMU1_INT_GPIO_Port GPIOC
+#define LED_RED_Pin GPIO_PIN_1
+#define LED_RED_GPIO_Port GPIOA
+#define KEY1_Pin GPIO_PIN_0
+#define KEY1_GPIO_Port GPIOB
+#define KEY3_Pin GPIO_PIN_11
+#define KEY3_GPIO_Port GPIOA
+#define IMU_CS_Pin GPIO_PIN_12
+#define IMU_CS_GPIO_Port GPIOA
+#define FPGA_CS_Pin GPIO_PIN_15
+#define FPGA_CS_GPIO_Port GPIOA
+#define IMU_CSB6_Pin GPIO_PIN_6
+#define IMU_CSB6_GPIO_Port GPIOB
+#define LED_GREEN_Pin GPIO_PIN_8
+#define LED_GREEN_GPIO_Port GPIOB
+#define FPGA_RST_Pin GPIO_PIN_9
+#define FPGA_RST_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
